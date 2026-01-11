@@ -1,0 +1,35 @@
+#navi{
+    font-family: monospace;
+    background-color: rgb(35, 35, 35);
+}
+#navi h1{
+    color: white;
+    font-weight: lighter;
+}
+#home {
+    font-family: monospace;
+    color: white;
+    font-size: larger;
+}
+h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+}
+#about{
+    padding: 30px;
+}
+#about h3{
+    font-family: monospace;
+    font-weight: lighter;
+}
+#home{
+    color:white;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color:green
+}
+#projects h3{
+    font-size: larger;
+}
