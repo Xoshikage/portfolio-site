@@ -1,1 +1,1 @@
-This is my portfolio resume! Thats it. Thank you for reading me
+This is my portfolio resume website. I published this website on Janurary 12th, 2026. There are a few things that need to be fixed. I'd like to add a drop down for mobile viewing and a few other visual changes to make the website stand out a bit more.
