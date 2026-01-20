@@ -1,35 +1,81 @@
-#navi{
-    font-family: monospace;
-    background-color: rgb(35, 35, 35);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-color: #121212;
+    --bg-color-nav: ;
+    --text-color: #E0E0E0;
 }
-#navi h1{
-    color: white;
+
+#navi {
+    font-family: Inter;
     font-weight: lighter;
 }
+
+#navi h1 {
+    color: black;
+    font-weight: lighter;
+}
+
 #home {
     font-family: monospace;
     color: white;
     font-size: larger;
 }
-h2{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 20px;
 }
-#about{
+
+#home {
+    color: white;
+}
+
+#about {
     padding: 30px;
+    color: #E0E0E0;
+    background-color: #121212;
 }
-#about h3{
-    font-family: monospace;
-    font-weight: lighter;
+
+#skills h2 {
+    color: white;
 }
-#home{
-    color:white;
+
+#skills {
+    padding: 30px;
+    background-color: #1E1E1E;
+    color: black;
 }
-a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    color:green
+
+#projects h2 {
+    color: white;
 }
-#projects h3{
+
+#projects {
+    padding: 30px;
+    background-color: #1E1E1E;
+    color: black;
+}
+
+#contact {
+    padding: 30px;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#about p {
+    text-align: left;
+}
+
+#projects h3 {
     font-size: larger;
 }
