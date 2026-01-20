@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'vinyl-green': '#10b981'
+
       },
     },
     plugins: [],

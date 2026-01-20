@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--I created this site using HTML/CSS - Tailwind! -->
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <title>
     XavierJackson.com
   </title>
@@ -24,16 +24,16 @@
 <body class="bg-gray-100 text-gray-800 font-sans">
 
   <!-- Navbar -->
-<nav class="fixed top-0 w-full z-50 bg-emerald-700" id="navi">
+<nav class="fixed top-0 w-full z-50 bg-emerald-700 hover:bg-emerald-600 transition-all" id="navi">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 class="text-xl font-bold">
-          <a href="#home" class="hover:text-green-500" style="color:white;">Xavier Jackson</a>
+          <a href="#home" class="nav-link text-white inline-block" style="color:white;">Xavier Jackson</a>
         </h1>
         <div class="space-x-6">
-            <a href="#about" class="nav-link" style="color:white;">About</a>
-            <a href="#skills" class="nav-link" style="color: white">Skills</a>
-            <a href="#projects" class="nav-link" style="color: white">Projects</a>
-            <a href="#contact" class="nav-link" style="color: white">Contact</a>
+            <a href="#about" class="nav-link text-white inline-block scroll-mt-25 scroll-behavior: scroll-smooth">About</a>
+            <a href="#skills" class="nav-link text-white inline-block">Skills</a>
+            <a href="#projects" class="nav-link text-white inline-block">Projects</a>
+            <a href="#contact" class="nav-link text-white inline-block">Contact</a>
         </div>
     </div>
 </nav>
@@ -42,13 +42,13 @@
   <section id="home" class="min-h-screen flex items-center justify-center text-center color: bg-"
           style="background-image: url(assets/images/background.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;" 
   >
-    <div class="mt-20" style="padding-bottom: 20;">
+    <div class="mt-20 absolute top-0 left-3 text-left" style="padding-bottom: 20;">
     <!-- Title -->
       <h2 class="text-4xl" style="font-size: 80px; color: white;">Xavier Jackson</h2>
-      <p class="mt-4 text-xl" style="font-size: 28px;">Computer Science: Software Development 2027</p> <hr><br>
+      <p class="text-4xl" style="font-size: 28px;">Computer Science: Software Development 2027</p><hr><br>
       <a href="resume.pdf" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-full transition-all" target="_blank">
         View Resume Here 📎
-    </a>
+      </a>
     </div>  
   </section>
 
@@ -56,12 +56,12 @@
   <section id="about" class="py-30 bg-black">
   <div class="max-w-4xl mx-auto text-center space-y-8">
 
-    <h2 class="text-5xl font-bold">About Me</h2><hr>
+    <h2 class="text-5xl font-bold bg-emerald-700 rounded-lg">About Me</h2><hr>
 
     <div class="space-y-4">
-      <h3 class="text-4xl font-semibold">Background</h3>
+      <h3 class="text-4xl font-semibold text-left">Background</h3>
       <p>
-        Hello! My name is Xavier Jackson, a Computer Science student at LI was born and raised in South Florida.
+        Hello! My name is Xavier Jackson, a Computer Science student at LU was born and raised in South Florida.
         I attended a private Christian school for my elementary, middle school,
         and high school years. In my junior year of high school, I took my first
         coding class and fell in love with the systematic creation of code and
@@ -75,7 +75,7 @@
     </div>
     <hr>
     <div class="space-y-4">
-      <h3 class="text-4xl font-semibold">Passions</h3>
+      <h3 class="text-4xl font-semibold text-left">Passions</h3>
       <p>
         I am very passionate about teaching. I have worked with children since
         the 8th grade, and I’ve always enjoyed creating a safe and fun learning
@@ -103,28 +103,28 @@
       <h2 class="text-4xl font-semibold">💻 Languages and Software 💻</h2><hr>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
         <!-- Object Oriented Programming -->
-        <span class="bg-white p-4 rounded shadow"><b style="font-size: 18px;">Object Oriented Programming:
+        <span class="bg-slate-100 p-4 rounded shadow"><b style="font-size: 18px;">Object Oriented Programming:
         </b> <br> 
                   <i class="devicon-cplusplus-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">C++</span>, 
                   <i class="devicon-java-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">Java</span>, 
                   <i class="devicon-csharp-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">C#</span>
         </span>
         <!-- Front End Programming -->
-        <span class="bg-white p-4 rounded shadow"><b style="font-size: 18px;">Front End Programming:
+        <span class="bg-slate-100 p-4 rounded shadow"><b style="font-size: 18px;">Front End Programming:
         </b> <br> 
                   <i class="devicon-html5-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">HTML</span>, 
                   <i class="devicon-react-original colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">React Native</span>, 
                   <i class="devicon-tailwindcss-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">Tailwind</span>
         </span>
         <!-- Back End Development -->
-        <span class="bg-white p-4 rounded shadow"><b style="font-size: 18px;">Back End Development:
+        <span class="bg-slate-100 p-4 rounded shadow"><b style="font-size: 18px;">Back End Development:
         </b> <br> 
                   <i class="devicon-sqlite-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">SQL</span>, 
                   <i class="devicon-mongodb-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">MongoDB</span>, 
                   <i class="devicon-firebase-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">Firebase</span>
         </span>
         <!-- Other -->
-        <span class="bg-white p-4 rounded shadow"><b style="font-size: 18px;">Other:
+        <span class="bg-slate-100 p-4 rounded shadow"><b style="font-size: 18px;">Other:
         </b> <br> 
                   <i class="devicon-python-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">Python</span>, 
                   <i class="devicon-unity-plain colored" style="font-size: 36px;"></i> <span style="font-size: 18px;">Unity Engine</span>
@@ -134,21 +134,21 @@
     </div>
        <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-semibold">🔨 Experience/Class Projects 🔨</h2><hr>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
-        <span class="bg-white p-4 rounded shadow" style="font-size: 16px;">Database Design and Data Loading</span>
-        <span class="bg-white p-4 rounded shadow">Data Structures and Algorithms</span>
-        <span class="bg-white p-4 rounded shadow">Videogame Design</span>
-        <span class="bg-white p-4 rounded shadow">Web and Application Design</span>
-        <span class="bg-white p-4 rounded shadow">Outlier AI Training and Analysis</span>
+      <div class="grid grid-cols-2 sm:grid-cols-1 gap-4 mt-6">
+        <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">🧰</span> Database Design and Data Loading</b> - Loading data via Microsoft Access, into SQL etc.</span>
+        <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">💻</span> Data Structures and Algorithms</b> - Implementing data structures and algorithms in C++ and Java.</span>
+        <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">🎮</span> Videogame Design</b> - Creating 2D games using Unity's Game Engine and C#.</span>
+        <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">🌐</span> Web and Application Design</b> - Building responsive websites and applications using HTML, CSS, JavaScript, React Native, Tailwind CSS.</span>
+        <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">🤖</span> Outlier AI Training and Analysis</b> - Training AI models to identify coding issues and improvements.</span>
       </div><br>
     </div>
      <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-semibold">⚙️ Soft Skills ⚙️</h2><hr>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
-        <span class="bg-white p-4 rounded shadow" style="font-size: 16px;">Techinal Communication</span>
-        <span class="bg-white p-4 rounded shadow">Conversational Spanish</span>
-        <span class="bg-white p-4 rounded shadow">Web and Application Design</span>
-        <span class="bg-white p-4 rounded shadow">Teaching and Mentoring</span>
+      <div class="grid grid-cols-2 sm:grid-cols-1 gap-4 mt-6">
+          <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">🧰</span> Technical Communication</b> - Loading data via Microsoft Access, into SQL etc.</span>
+        <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">🗣️</span> Conversational Spanish</b> - Fluent in Spanish.</span>
+        <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">💻</span> Web and Application Design</b> - Building responsive websites and applications using HTML, CSS, JavaScript, React Native, Tailwind CSS.</span>
+        <span class="bg-slate-100 p-4 rounded shadow text-start"><b><span style="font-size: 24px;">👨‍🏫</span> Teaching and Mentoring</b> - Experience teaching and mentoring students in programming and software development.</span>
       </div>
       <div class="max-w-4xl mx-auto text-center"><br>
       </div>
