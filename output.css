@@ -696,6 +696,38 @@ video {
   max-width: 80rem;
 }
 
+.scroll-m-24 {
+  scroll-margin: 6rem;
+}
+
+.scroll-m-20 {
+  scroll-margin: 5rem;
+}
+
+.scroll-m-10 {
+  scroll-margin: 2.5rem;
+}
+
+.scroll-m-12 {
+  scroll-margin: 3rem;
+}
+
+.scroll-m-11 {
+  scroll-margin: 2.75rem;
+}
+
+.scroll-mt-16 {
+  scroll-margin-top: 4rem;
+}
+
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -746,6 +778,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-80 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(20rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(20rem * var(--tw-space-y-reverse));
 }
 
 .scroll-smooth {
