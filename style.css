@@ -62,7 +62,6 @@ h2 {
 }
 
 #about {
-    padding: 30px;
     color: #E0E0E0;
     background-color: #121212;
 }
@@ -72,7 +71,6 @@ h2 {
 }
 
 #skills {
-    padding: 30px;
     background-color: #1E1E1E;
     color: black;
 }
@@ -82,13 +80,11 @@ h2 {
 }
 
 #projects {
-    padding: 30px;
     background-color: #1E1E1E;
     color: black;
 }
 
 #contact {
-    padding: 30px;
     background-color: #121212;
     color: #E0E0E0;
 }
@@ -99,6 +95,18 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Mobile responsive improvements */
+@media (max-width: 640px) {
+    h2 {
+        padding: 12px;
+    }
+
+    #home {
+        font-size: 0.9rem;
+    }
+}
+
 
 #about p {
     text-align: left;
