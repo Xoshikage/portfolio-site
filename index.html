@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- HTML Framework: Tailwind! -->
+<!-- This website was made with HTML and the CSS Framework Tailwind! -->
 <html lang="en" class="scroll-smooth">
   <title>
     XavierJackson.com
@@ -9,8 +9,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xavier Jackson | Portfolio</title>
+    <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Tailwind -->
   <link href="./output.css" rel="stylesheet">
   <!-- Custom Styles -->
   <link href="./style.css" rel="stylesheet">
@@ -25,13 +25,13 @@
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body>
 
   <!-- Navbar -->
 <nav class="fixed top-0 w-full z-50 bg-emerald-700 hover:bg-emerald-600 transition-all" id="navi">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 class="text-xl font-bold">
-          <a href="#home" class="nav-link text-white inline-block" style="color:white;">Xavier Jackson</a>
+          <a href="#home" class="nav-link text-white inline-block">Xavier Jackson</a>
         </h1>
         <!-- Mobile menu button -->
         <button class="md:hidden text-white text-2xl" id="menuBtn" aria-label="Toggle menu">
@@ -45,25 +45,27 @@
             <a href="#contact" class="nav-link text-white inline-block scroll-mt-20">Contact</a>
         </div>
     </div>
-    <!-- Mobile menu -->
-    <div class="hidden md:hidden bg-emerald-800 pb-4" id="mobileMenu">
-        <a href="#about" class="block px-4 py-2 text-white hover:bg-emerald-700">About</a>
-        <a href="#skills" class="block px-4 py-2 text-white hover:bg-emerald-700">Skills</a>
-        <a href="#projects" class="block px-4 py-2 text-white hover:bg-emerald-700">Projects</a>
-        <a href="#contact" class="block px-4 py-2 text-white hover:bg-emerald-700">Contact</a>
-    </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-emerald-800 pb-4" id="mobileMenu">
+          <a href="#about" class="block px-4 py-2 text-white hover:bg-emerald-700">About</a>
+          <a href="#skills" class="block px-4 py-2 text-white hover:bg-emerald-700">Skills</a>
+          <a href="#projects" class="block px-4 py-2 text-white hover:bg-emerald-700">Projects</a>
+          <a href="#contact" class="block px-4 py-2 text-white hover:bg-emerald-700">Contact</a>
+        </div>
 </nav>
 
   <!-- Home Section -->
-  <section id="home" class="min-h-screen flex items-center justify-center text-center pt-20" style="background-image: url(assets/images/background.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+  <section id="home" class="min-h-screen flex items-center justify-center text-center pt-20">
     <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-0">
       <source src="assets/images/Image_to_Looping_Vinyl_Video.mp4" type="video/mp4">
-      <p class="to-black">Your browser does not support the video tag.</p>
+      <p class="to-black">
+        Your browser does not support the video tag.
+      </p>
     </video>
     <div class="text-left px-4 sm:px-6 relative z-10">
     <!-- Title -->
-      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold bg-emerald-700 rounded-lg p-4" style="color: white;">Xavier Jackson</h2>
-      <p class="text-xl sm:text-2xl md:text-3xl mt-4" style="color: white;">Computer Science: Software Development 2027</p><hr class="my-4"><br>
+      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold bg-emerald-700 rounded-lg p-4">Xavier Jackson</h2>
+      <p class="text-xl sm:text-2xl md:text-3xl mt-4">Computer Science: Software Development 2027</p><hr class="my-4"><br>
       <a href="resume.pdf" class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-full transition-all text-lg" target="_blank">
         View Resume📎
       </a>
@@ -78,14 +80,14 @@
 
     <div class="space-y-4 text-sm sm:text-base">
       <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-left">Background</h3>
-      <p>
+      <p class="text-left">
         Hello! My name is Xavier Jackson, a Computer Science student at Liberty University. I was born and raised in South Florida.
         I attended a private Christian school for my elementary, middle school,
         and high school years. In my junior year of high school, I took my first
         coding class and fell in love with the systematic creation of code and
         representing objects in a virtual space.
       </p>
-      <p>
+      <p class="text-left">
         I was accepted to Liberty University in 2022, and since then I have pursued
         a Bachelor's degree in Computer Science with a concentration in Software
         Engineering. My graduation is set for May 2027.
@@ -94,17 +96,17 @@
     <hr>
     <div class="space-y-4 text-sm sm:text-base">
       <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-left">Passions</h3>
-      <p>
+      <p class="text-left">
         I am very passionate about teaching. I have worked with children since
         the 8th grade, and I’ve always enjoyed creating a safe and fun learning
         environment for them.
       </p>
-      <p>
+      <p class="text-left">
         One dream of mine is to create games that teach teenagers how to code by
         making learning fun and interactive, as well as gamifying other educational
         concepts for elementary, middle, and high school students.
       </p>
-      <p>
+      <p class="text-left">
         One day, I’d also like to work for the government and build applications
         that help keep people safe, protect their information, and reduce the
         impact of the dark web on U.S. citizens. I also hope to explore the world,
@@ -217,8 +219,9 @@
     <p>&copy; 2025, Xavier Jackson. All rights reserved.</p>
   </footer>
 
+  
   <script>
-    // Mobile menu toggle
+    // Mobile Menu Toggle Script
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     const navLinks = mobileMenu.querySelectorAll('a');
@@ -227,7 +230,6 @@
       mobileMenu.classList.toggle('hidden');
     });
 
-    // Close menu when a link is clicked
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
