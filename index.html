@@ -1,241 +1,483 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- This website was made with HTML and the CSS Framework Tailwind! -->
 <html lang="en" class="scroll-smooth">
-  <title>
-    XavierJackson.com
-  </title>
-<head>
-  <!-- Preliminaries -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xavier Jackson | Portfolio</title>
+  <title>XavierJackson.com</title>
+  <head>
+    <!-- Preliminaries -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xavier Jackson | Portfolio</title>
     <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="./output.css" rel="stylesheet">
-  <!-- Custom Styles -->
-  <link href="./style.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!--Favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-  <link rel="manifest" href="assets/images/site.webmanifest">
-  <!-- Icon Library-->
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-</head>
-<body>
-
-  <!-- Navbar -->
-<nav class="fixed top-0 w-full z-50 bg-emerald-700 hover:bg-emerald-600 transition-all" id="navi">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="./style.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+    <!-- Icon Library-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-emerald-700 hover:bg-emerald-600 transition-all"
+      id="navi"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
         <h1 class="text-xl font-bold">
-          <a href="#home" class="nav-link text-white inline-block">Xavier Jackson</a>
+          <a href="#home" class="nav-link text-white inline-block"
+            >Xavier Jackson</a
+          >
         </h1>
         <!-- Mobile menu button -->
-        <button class="md:hidden text-white text-2xl" id="menuBtn" aria-label="Toggle menu">
+        <button
+          class="md:hidden text-white text-2xl"
+          id="menuBtn"
+          aria-label="Toggle menu"
+        >
           <i class="fas fa-bars"></i>
         </button>
         <!-- Desktop menu -->
         <div class="hidden md:flex space-x-6" id="navMenu">
-            <a href="#about" class="nav-link text-white inline-block scroll-mt-24 scroll-behavior: scroll-smooth">About</a>
-            <a href="#skills" class="nav-link text-white inline-block scroll-mt-20">Skills</a>
-            <a href="#projects" class="nav-link text-white inline-block scroll-mt-20">Projects</a>
-            <a href="#contact" class="nav-link text-white inline-block scroll-mt-20">Contact</a>
+          <a
+            href="#about"
+            class="nav-link text-white inline-block scroll-mt-24 scroll-behavior: scroll-smooth"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="nav-link text-white inline-block scroll-mt-20"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="nav-link text-white inline-block scroll-mt-20"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="nav-link text-white inline-block scroll-mt-20"
+            >Contact</a
+          >
         </div>
-    </div>
-        <!-- Mobile menu -->
-        <div class="hidden md:hidden bg-emerald-800 pb-4" id="mobileMenu">
-          <a href="#about" class="block px-4 py-2 text-white hover:bg-emerald-700">About</a>
-          <a href="#skills" class="block px-4 py-2 text-white hover:bg-emerald-700">Skills</a>
-          <a href="#projects" class="block px-4 py-2 text-white hover:bg-emerald-700">Projects</a>
-          <a href="#contact" class="block px-4 py-2 text-white hover:bg-emerald-700">Contact</a>
+      </div>
+      <!-- Mobile menu -->
+      <div class="hidden md:hidden bg-emerald-800 pb-4" id="mobileMenu">
+        <a href="#about" class="block px-4 py-2 text-white hover:bg-emerald-700"
+          >About</a
+        >
+        <a
+          href="#skills"
+          class="block px-4 py-2 text-white hover:bg-emerald-700"
+          >Skills</a
+        >
+        <a
+          href="#projects"
+          class="block px-4 py-2 text-white hover:bg-emerald-700"
+          >Projects</a
+        >
+        <a
+          href="#contact"
+          class="block px-4 py-2 text-white hover:bg-emerald-700"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center text-center pt-20"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute top-0 left-0 w-full h-full object-cover z-0"
+      >
+        <source
+          src="assets/images/Image_to_Looping_Vinyl_Video.mp4"
+          type="video/mp4"
+        />
+        <p class="to-black">Your browser does not support the video tag.</p>
+      </video>
+      <div class="text-left px-4 sm:px-6 relative z-10">
+        <!-- Title -->
+        <h2
+          class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold bg-emerald-700 rounded-lg p-4"
+        >
+          Xavier Jackson
+        </h2>
+        <p class="text-xl sm:text-2xl md:text-3xl mt-4">
+          Computer Science: Software Development 2027
+        </p>
+        <hr class="my-4" />
+        <br />
+        <a
+          href="resume.pdf"
+          class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-full transition-all text-lg"
+          target="_blank"
+        >
+          View Resume📎
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-12 sm:py-20 md:py-30 bg-black scroll-m-10 px-4"
+    >
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-bold bg-emerald-700 rounded-lg p-4"
+        >
+          ‼️ About Me ‼️
+        </h2>
+        <hr />
+
+        <div class="space-y-4 text-sm sm:text-base">
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-left">
+            Background
+          </h3>
+          <p class="text-left">
+            Hello! My name is Xavier Jackson, a Computer Science student at
+            Liberty University. I was born and raised in South Florida. I
+            attended a private Christian school for my elementary, middle
+            school, and high school years. In my junior year of high school, I
+            took my first coding class and fell in love with the systematic
+            creation of code and representing objects in a virtual space.
+          </p>
+          <p class="text-left">
+            I was accepted to Liberty University in 2022, and since then I have
+            pursued a Bachelor's degree in Computer Science with a concentration
+            in Software Engineering. My graduation is set for May 2027.
+          </p>
         </div>
-</nav>
-
-  <!-- Home Section -->
-  <section id="home" class="min-h-screen flex items-center justify-center text-center pt-20">
-    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-0">
-      <source src="assets/images/Image_to_Looping_Vinyl_Video.mp4" type="video/mp4">
-      <p class="to-black">
-        Your browser does not support the video tag.
-      </p>
-    </video>
-    <div class="text-left px-4 sm:px-6 relative z-10">
-    <!-- Title -->
-      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold bg-emerald-700 rounded-lg p-4">Xavier Jackson</h2>
-      <p class="text-xl sm:text-2xl md:text-3xl mt-4">Computer Science: Software Development 2027</p><hr class="my-4"><br>
-      <a href="resume.pdf" class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-full transition-all text-lg" target="_blank">
-        View Resume📎
-      </a>
-    </div>  
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-12 sm:py-20 md:py-30 bg-black scroll-m-10 px-4">
-  <div class="max-w-4xl mx-auto text-center space-y-8">
-
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold bg-emerald-700 rounded-lg p-4">‼️ About Me ‼️</h2><hr>
-
-    <div class="space-y-4 text-sm sm:text-base">
-      <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-left">Background</h3>
-      <p class="text-left">
-        Hello! My name is Xavier Jackson, a Computer Science student at Liberty University. I was born and raised in South Florida.
-        I attended a private Christian school for my elementary, middle school,
-        and high school years. In my junior year of high school, I took my first
-        coding class and fell in love with the systematic creation of code and
-        representing objects in a virtual space.
-      </p>
-      <p class="text-left">
-        I was accepted to Liberty University in 2022, and since then I have pursued
-        a Bachelor's degree in Computer Science with a concentration in Software
-        Engineering. My graduation is set for May 2027.
-      </p>
-    </div>
-    <hr>
-    <div class="space-y-4 text-sm sm:text-base">
-      <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-left">Passions</h3>
-      <p class="text-left">
-        I am very passionate about teaching. I have worked with children since
-        the 8th grade, and I’ve always enjoyed creating a safe and fun learning
-        environment for them.
-      </p>
-      <p class="text-left">
-        One dream of mine is to create games that teach teenagers how to code by
-        making learning fun and interactive, as well as gamifying other educational
-        concepts for elementary, middle, and high school students.
-      </p>
-      <p class="text-left">
-        One day, I’d also like to work for the government and build applications
-        that help keep people safe, protect their information, and reduce the
-        impact of the dark web on U.S. citizens. I also hope to explore the world,
-        visiting great adventure and theme parks along the way.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-10 bg-black scroll-m-12 px-4">
-    <div class="max-w-4xl mx-auto text-center color:white">
-      <h2 class="text-2xl md:text-4xl font-bold flex items-center justify-center gap-2">💻 Languages and Software 💻</h2><hr>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 grow-on-hover">
-        <!-- Object Oriented Programming -->
-        <span class="bg-slate-100 p-4 rounded shadow"><b class="text-base sm:text-lg">Object Oriented Programming:
-        </b> <br> 
-                  <i class="devicon-cplusplus-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">C++</span>, 
-                  <i class="devicon-java-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">Java</span>, 
-                  <i class="devicon-csharp-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">C#</span>
-        </span>
-        <!-- Front End Programming -->
-        <span class="bg-slate-100 p-4 rounded shadow"><b class="text-base sm:text-lg">Front End Programming:
-        </b> <br> 
-                  <i class="devicon-html5-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">HTML</span>, 
-                  <i class="devicon-react-original colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">React Native</span>, 
-                  <i class="devicon-tailwindcss-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">Tailwind</span>
-        </span>
-        <!-- Back End Development -->
-        <span class="bg-slate-100 p-4 rounded shadow"><b class="text-base sm:text-lg">Back End Development:
-        </b> <br> 
-                  <i class="devicon-sqlite-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">SQL</span>, 
-                  <i class="devicon-mongodb-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">MongoDB</span>, 
-                  <i class="devicon-firebase-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">Firebase</span>
-        </span>
-        <!-- Other -->
-        <span class="bg-slate-100 p-4 rounded shadow"><b class="text-base sm:text-lg">Other:
-        </b> <br> 
-                  <i class="devicon-python-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">Python</span>, 
-                  <i class="devicon-unity-plain colored text-3xl sm:text-4xl"></i> <span class="text-base sm:text-lg">Unity Engine</span>
-        </span>
-        </span>
-      </div><br>
-    </div>
-       <div class="max-w-4xl mx-auto text-center">
-     <h2 class="text-2xl md:text-4xl font-bold flex items-center justify-center gap-2">🔨 Experience/Class Projects 🔨</h2><hr>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">🧰</span> Database Design and Data Loading</b> - Designed and normalized relational database schemas in class using SQl to reduce data redundancy and improve query execution time</span>
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">📊</span> Full Stack Development Planning and Management</b> - Defined techinical specifications and data flow diagrams to ensure cohesive integration between interfaces, and planned future projects by creating tech stacks and road maps</span>
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">💻</span> Data Structures and Algorithms</b> - Implementing data structures and algorithms in C++ and Java.</span>
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">🎮</span> Videogame Design</b> - Creating 2D games using Unity's Game Engine and C#.</span>
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">🌐</span> Web and Application Design</b> - Building responsive websites, webapps, and applications via frontend frameworks such as tailwind, which is what this site was designed with!</span>
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">🤖</span> Outlier AI Training and Analysis</b> - Evaluated and refined LLMs by performing rigorous code reviews across python, java, and C++</span>
-      </div><br>
-    </div>
-     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl md:text-4xl font-bold flex items-center justify-center gap-2">⚙️ Soft Skills ⚙️</h2><hr>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-          <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">🧰</span> Technical Communication</b> - Clearly communicating software engineering concepts with peers to develop impactful solutions.</span>
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">🗣️</span> Conversational Spanish</b> - Several years of digital and nondigital interaction with native speakers</span>
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">💻</span> Web and Application Design</b> - Designed apps and websites via prototyping softwares to have clearly exucted user interfaces</span>
-        <span class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"><b><span class="text-xl sm:text-2xl">👨‍🏫</span> Teaching and Mentoring</b> - Tutored students via an online tutoring platform reinforcing core coding concepts</span>
+        <hr />
+        <div class="space-y-4 text-sm sm:text-base">
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-left">
+            Passions
+          </h3>
+          <p class="text-left">
+            I am very passionate about teaching. I have worked with children
+            since the 8th grade, and I’ve always enjoyed creating a safe and fun
+            learning environment for them.
+          </p>
+          <p class="text-left">
+            One dream of mine is to create games that teach teenagers how to
+            code by making learning fun and interactive, as well as gamifying
+            other educational concepts for elementary, middle, and high school
+            students.
+          </p>
+          <p class="text-left">
+            One day, I’d also like to work for the government and build
+            applications that help keep people safe, protect their information,
+            and reduce the impact of the dark web on U.S. citizens. I also hope
+            to explore the world, visiting great adventure and theme parks along
+            the way.
+          </p>
+        </div>
       </div>
-      <div class="max-w-4xl mx-auto text-center"><br>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-5 bg-white scroll-m-12 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl md:text-4xl font-bold flex items-center justify-center gap-2">📁 Projects and Collaborations 📁</h2><hr><br>
-      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-        <div class="bg-slate-100 p-4 rounded shadow grow-on-hover">
-          <h3 class="text-lg sm:text-xl font-bold">🏗️ Resume Builder</h3><br>
-          <div class="text-left text-sm sm:text-base">
-                      <p><b>Project Decription: </b>Uses API's from Github and Linkdin to generate resumes</p>
-                      <p><b>Languages and Frameworkts:</b> React Native/TypeScript <i class="fab fa-react"></i></p>
-                      <p><b>Role:</b> Sole Developer</p>
-                      <p><b>Project Status:</b> Core Resume Form Logic</p>
+    <!-- Skills Section -->
+    <section id="skills" class="py-10 bg-black scroll-m-12 px-4">
+      <div class="max-w-4xl mx-auto text-center color:white">
+        <h2
+          class="text-2xl md:text-4xl font-bold flex items-center justify-center gap-2"
+        >
+          💻 Languages and Software 💻
+        </h2>
+        <hr />
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 grow-on-hover">
+          <!-- Object Oriented Programming -->
+          <span class="bg-slate-100 p-4 rounded shadow"
+            ><b class="text-base sm:text-lg">Object Oriented Programming: </b>
+            <br />
+            <i class="devicon-cplusplus-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">C++</span>,
+            <i class="devicon-java-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">Java</span>,
+            <i class="devicon-csharp-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">C#</span>
+          </span>
+          <!-- Front End Programming -->
+          <span class="bg-slate-100 p-4 rounded shadow"
+            ><b class="text-base sm:text-lg">Front End Programming: </b> <br />
+            <i class="devicon-html5-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">HTML</span>,
+            <i class="devicon-react-original colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">React Native</span>,
+            <i
+              class="devicon-tailwindcss-plain colored text-3xl sm:text-4xl"
+            ></i>
+            <span class="text-base sm:text-lg">Tailwind</span>
+          </span>
+          <!-- Back End Development -->
+          <span class="bg-slate-100 p-4 rounded shadow"
+            ><b class="text-base sm:text-lg">Back End Development: </b> <br />
+            <i class="devicon-sqlite-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">SQL</span>,
+            <i class="devicon-mongodb-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">MongoDB</span>,
+            <i class="devicon-firebase-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">Firebase</span>
+          </span>
+          <!-- Other -->
+          <span class="bg-slate-100 p-4 rounded shadow"
+            ><b class="text-base sm:text-lg">Other: </b> <br />
+            <i class="devicon-python-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">Python</span>,
+            <i class="devicon-unity-plain colored text-3xl sm:text-4xl"></i>
+            <span class="text-base sm:text-lg">Unity Engine</span>
+          </span>
+        </div>
+        <br />
+      </div>
+      <div class="max-w-4xl mx-auto text-center">
+        <h2
+          class="text-2xl md:text-4xl font-bold flex items-center justify-center gap-2"
+        >
+          🔨 Experience/Class Projects 🔨
+        </h2>
+        <hr />
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">🧰</span> Database Design and
+              Data Loading</b
+            >
+            - Designed and normalized relational database schemas in class using
+            SQl to reduce data redundancy and improve query execution time</span
+          >
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">📊</span> Full Stack
+              Development Planning and Management</b
+            >
+            - Defined techinical specifications and data flow diagrams to ensure
+            cohesive integration between interfaces, and planned future projects
+            by creating tech stacks and road maps</span
+          >
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">💻</span> Data Structures and
+              Algorithms</b
+            >
+            - Implementing data structures and algorithms in C++ and Java.</span
+          >
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b><span class="text-xl sm:text-2xl">🎮</span> Videogame Design</b>
+            - Creating 2D games using Unity's Game Engine and C#.</span
+          >
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">🌐</span> Web and Application
+              Design</b
+            >
+            - Building responsive websites, webapps, and applications via
+            frontend frameworks such as tailwind, which is what this site was
+            designed with!</span
+          >
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">🤖</span> Outlier AI Training
+              and Analysis</b
+            >
+            - Evaluated and refined LLMs by performing rigorous code reviews
+            across python, java, and C++</span
+          >
+        </div>
+        <br />
+      </div>
+      <div class="max-w-4xl mx-auto text-center">
+        <h2
+          class="text-2xl md:text-4xl font-bold flex items-center justify-center gap-2"
+        >
+          ⚙️ Soft Skills ⚙️
+        </h2>
+        <hr />
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">🧰</span> Technical
+              Communication</b
+            >
+            - Clearly communicating software engineering concepts with peers to
+            develop impactful solutions.</span
+          >
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">🗣️</span> Conversational
+              Spanish</b
+            >
+            - Several years of digital and nondigital interaction with native
+            speakers</span
+          >
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">💻</span> Web and Application
+              Design</b
+            >
+            - Designed apps and websites via prototyping softwares to have
+            clearly exucted user interfaces</span
+          >
+          <span
+            class="bg-slate-100 p-4 rounded shadow text-start text-sm sm:text-base"
+            ><b
+              ><span class="text-xl sm:text-2xl">👨‍🏫</span> Teaching and
+              Mentoring</b
+            >
+            - Tutored students via an online tutoring platform reinforcing core
+            coding concepts</span
+          >
+        </div>
+        <div class="max-w-4xl mx-auto text-center"><br /></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-white scroll-m-12 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2
+          class="text-2xl md:text-4xl font-bold flex items-center justify-center gap-2"
+        >
+          📁 Projects and Collaborations 📁
+        </h2>
+        <hr />
+        <br />
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div class="bg-slate-100 p-4 rounded shadow grow-on-hover">
+            <h3 class="text-lg sm:text-xl font-bold">🏗️ Resume Builder</h3>
+            <br />
+            <div class="text-left text-sm sm:text-base">
+              <p>
+                <b>Project Decription: </b>Uses API's from Github and Linkdin to
+                generate resumes
+              </p>
+              <p>
+                <b>Languages and Frameworkts:</b> React Native/TypeScript
+                <i class="fab fa-react"></i>
+              </p>
+              <p><b>Role:</b> Sole Developer</p>
+              <p><b>Project Status:</b> Core Resume Form Logic</p>
+            </div>
+            <a
+              href="https://github.com/Xoshikage?tab=repositories"
+              target="_blank"
+              class="alt-nav-link text-sm sm:text-base"
+              ><i class="fas fa-link"></i> Link to Project &rarr;</a
+            >
           </div>
-          <a href="https://github.com/Xoshikage?tab=repositories" target="_blank" class="alt-nav-link text-sm sm:text-base"><i class="fas fa-link"></i> Link to Project -></a>
-
-        </div>
-        <div class="bg-slate-100 p-4 rounded shadow grow-on-hover">
-          <h3 class="text-lg sm:text-xl font-bold">🌎 Missionary Finder App: Amago</h3>
-          <p class="text-sm sm:text-base">An app for Missionaries and Organizations to meet each other</p>
-          <p class="text-xs sm:text-sm"><i>Still in Development collaborating with Kellie Vanessen</i></p><br>
-          <a href="https://metal-facet-70254495.figma.site/" target="_blank" class="alt-nav-link text-sm sm:text-base"><i class="fas fa-link"></i> Link to Project -></a>
+          <div class="bg-slate-100 p-4 rounded shadow grow-on-hover">
+            <h3 class="text-lg sm:text-xl font-bold">
+              🌎 Missionary Finder App: Amago
+            </h3>
+            <p class="text-sm sm:text-base">
+              An app for Missionaries and Organizations to meet each other
+            </p>
+            <p class="text-xs sm:text-sm">
+              <i>Still in Development collaborating with Kellie Vanessen</i>
+            </p>
+            <br />
+            <a
+              href="https://metal-facet-70254495.figma.site/"
+              target="_blank"
+              class="alt-nav-link text-sm sm:text-base"
+            >
+              <i class="fas fa-link"></i> Link to Project &rarr;
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-12 sm:py-20 bg-gray-200 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl sm:text-3xl font-semibold"> Contact Me </h2>
-      <p class="mt-4 text-sm sm:text-base">Email me at <a href="mailto:xdjackson04@gmail.com" class="nav-link text-glow">xdjackson04@gmail.com</a>  or find me on:</p>
-      <div class="mt-4 space-x-4 flex flex-wrap justify-center gap-2">
-        <a href="https://github.com/Xoshikage" target="_blank" class="nav-link text-sm sm:text-base"><i class="fab fa-github"></i> <b>GitHub</b></a>
-        <a href="https://www.linkedin.com/in/xavier-jackson-0477612b8/" target="_blank" class="nav-link text-sm sm:text-base"><i class="fab fa-linkedin"></i> <b>LinkedIn</b></a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 sm:py-20 bg-gray-200 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-semibold">Contact Me</h2>
+        <p class="mt-4 text-sm sm:text-base">
+          Email me at
+          <a href="mailto:xdjackson04@gmail.com" class="nav-link text-glow"
+            >xdjackson04@gmail.com</a
+          >
+          or find me on:
+        </p>
+        <div class="mt-4 space-x-4 flex flex-wrap justify-center gap-2">
+          <a
+            href="https://github.com/Xoshikage"
+            target="_blank"
+            class="nav-link text-sm sm:text-base"
+            ><i class="fab fa-github"></i> <b>GitHub</b></a
+          >
+          <a
+            href="https://www.linkedin.com/in/xavier-jackson-0477612b8/"
+            target="_blank"
+            class="nav-link text-sm sm:text-base"
+            ><i class="fab fa-linkedin"></i> <b>LinkedIn</b></a
+          >
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="py-6 text-center bg-black shadow-inner">
-    <p>&copy; 2025, Xavier Jackson. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="py-6 text-center bg-black shadow-inner">
+      <p>&copy; 2025, Xavier Jackson. All rights reserved.</p>
+    </footer>
 
-  
-  <script>
-    // Mobile Menu Toggle Script
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const navLinks = mobileMenu.querySelectorAll('a');
+    <script>
+      // Mobile Menu Toggle Script
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const navLinks = mobileMenu.querySelectorAll("a");
 
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
       });
-    });
-  </script>
 
-</body>
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
 </html>
